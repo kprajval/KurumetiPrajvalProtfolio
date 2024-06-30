@@ -1,0 +1,420 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2f3542;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    align-items: center;
+}
+
+/* Animated name text with typing effect */
+#animated-name-text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 200px;
+    margin-right: 20px; /* Space between text and profile picture */
+}
+
+#animated-name-text span {
+    position: relative;
+}
+
+#animated-name-text span::before {
+    content: "Kurumeti Prajval";
+    color: #ff7f50;
+    animation: words 20s infinite;
+}
+
+#animated-name-text span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #2f3542;
+    border-left: 2px solid #ff7f50;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes typing {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 8px);
+    }
+}
+
+/* Welcome text */
+#welcome-text {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #fff;
+    text-align: left; /* Adjust as needed */
+}
+
+/* Buttons */
+#AbtMeBtn, #Resume {
+    background-color: #ff7f50;
+    color: #2f3542;
+    border: none;
+    width: 25%;
+    font-weight: 900;
+    letter-spacing: 1%;
+    padding: 2%;
+    border-radius: 6%;
+    cursor: pointer;
+    margin-top: 10px; /* Adjust as needed */
+}
+
+#AbtMeBtn:hover, #Resume:hover {
+    opacity: 0.6;
+}
+
+/* Card container */
+#card {
+    background-color: #fff;
+    position: absolute;
+    top: 2%;
+    left: 47%;
+    width: 50%;
+    bottom: 2%;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Sections */
+.Contact, .AbtMe, .Skills, .Edu, .WorkExp, .Projects, .Feedback {
+    display: none;
+    color: #2f3542;
+    text-align: center;
+}
+
+/* Menu */
+#menu {
+    position: absolute;
+    left: -1%;
+}
+
+#menu img {
+    background-color: white;
+    padding: 5% 5% 5% 25%;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: padding 0.3s, background-color 0.3s; 
+}
+
+#menu img:hover, #menu img.active {
+    padding-left: 40%;
+    border-radius: 10%;
+}
+
+
+/* Work Experience section */
+#card.WorkExp {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+#card.WorkExp h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+}
+
+#card.WorkExp .job {
+    margin-bottom: 20px;
+}
+
+#card.WorkExp .job h3 {
+    font-size: 20px;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+#card.WorkExp .job p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#card.WorkExp .job ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#card.WorkExp .job ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Projects section */
+#card.Projects {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+}
+
+#card.Projects h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+}
+
+#card.Projects p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#card.Projects .project {
+    margin-bottom: 20px;
+}
+
+#card.Projects .project h3 {
+    font-size: 20px;
+    color: #0056b3;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #bbb5b5;
+}
+
+#card.Projects .project p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#card.Projects a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#card.Projects a:hover {
+    text-decoration: underline;
+}
+
+#card.Projects li{
+    text-align: left;
+}
+
+/* Education section */
+#card.Edu {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+}
+
+#card.Edu h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+}
+
+#card.Edu .education-item {
+    margin-bottom: 20px;
+}
+
+#card.Edu .education-item h3 {
+    font-size: 20px;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+#card.Edu .education-item p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Contact section */
+#card.Contact {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+    align-items: center; 
+    justify-content: center;
+}
+
+#card.Contact h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+}
+
+#card.Contact p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center; 
+    border-bottom: 1px solid #f1f1f1;
+}
+
+#card.Contact p strong {
+    color: #333;
+}
+
+.gif-placeholder {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+/* About Me section */
+#card.AbtMe {
+    background-color: #fff;
+    position: absolute;
+    top: 2%;
+    left: 47%;
+    width: 50%;
+    bottom: 2%;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    color: #333;
+}
+
+#card.AbtMe h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+}
+
+#card.AbtMe p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#card.AbtMe li{
+    text-align: left;
+}
+
+/*Skill Set*/
+#card.Skills h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+}
+
+#card h2 {
+    border-bottom: 2px solid #ff7f50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ff7f50;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.skills-list li:last-child {
+    border-bottom: none;
+}
+
+#card.Skills .skills-list p strong {
+    color: #333;
+}
+
+#AbtHoverMsg, #ContactHoverMsg, #SkillHoverMsg, #EduHoverMsg, #ProjHoverMsg, #WorkHoverMsg{
+    position: absolute;
+    left: 5.2%;
+    color: #333;
+    background-color: white;
+    font-size: small;
+    padding: 0.5%;
+    border-radius: 5px;
+    display: none;
+    font-weight: 700;
+    letter-spacing: 1%;
+}
+
+#AbtHoverMsg{
+    top: 28.7%;
+}
+
+#ContactHoverMsg{
+    top: 35.5%;
+}
+
+#SkillHoverMsg{
+    top: 42.5%;
+}
+
+#EduHoverMsg{
+    top: 49.3%;
+}
+
+#ProjHoverMsg{
+    top: 56%;
+}
+
+#WorkHoverMsg{
+    top: 63%;
+}

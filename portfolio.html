@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prajval Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+    <body>
+        <div id="menu">
+            <img width="35" height="35" src="icons8-contact.gif" alt="contacts" id="contacts-img"/><br>
+            <img width="35" height="35" src="icons8-message.gif" alt="contact-card" id="contact-card-img"/>
+            <img width="35" height="35" src="icons8-skills.gif" alt="gears--v1" id="skills-img"/><br>
+            <img width="35" height="35" src="icons8-book.gif" alt="education" id="education-img"/>
+            <img width="35" height="35" src="icons8-design.gif" alt="project" id="projects-img"/>
+            <img width="35" height="35" src="icons8-work.gif" alt="business" id="work-exp-img"/>
+            <!--<img width="35" height="35" src="icons8-facebook-like.gif" alt="comment-discussion" id="feedback-img"/>-->
+        </div>
+
+        <div class="container">
+            <div id="animated-name-text">
+                I'm <span></span><br>
+                <button id="AbtMeBtn">About Me</button>
+                <button id="Resume" onclick="openPDF()">Resume</button>
+                <div id="welcome-text">Welcome to my Portfolio Website</div>
+            </div>
+        </div>
+
+        <div id="HoverMsg">
+            <p id="AbtHoverMsg">About Me</p>
+            <p id="ContactHoverMsg">Contact</p>
+            <p id="SkillHoverMsg">Skill Set</p>
+            <p id="EduHoverMsg">Education</p>
+            <p id="ProjHoverMsg">Projects</p>
+            <p id="WorkHoverMsg">Work Experience</p>
+        </div>
+
+        <div id="card" class="AbtMe">
+            <h2>About Me</h2>
+            <p>
+                I am a meticulous software developer with a strong focus on data analysis, cloud computing, web,
+                and application development. I am dedicated to contributing effectively to dynamic projects, 
+                leveraging my experience in cloud platforms, cybersecurity, and the MERN stack. My goal is to 
+                deliver excellent solutions while continually expanding my knowledge and fostering creativity within team environments.
+                <br><br>
+                Looking ahead, I aim to excel in cybersecurity, advancing to high-level roles in the field to enhance system security, 
+                safeguard data integrity, and build secure digital infrastructures that protect against evolving threats.
+            </p>
+            <br>
+            <h3>Hobbies</h3>
+            <p>
+                In my free time, I enjoy:
+                <ul>
+                    <li>Playing cricket</li>
+                    <li>Long drives</li>
+                    <li>Love dwelling Stock Market</li>
+                    <li>Gamer</li>
+                    <li>Coding and exploring new programming languages</li>
+                    <!--<li>Reading about the latest advancements in cybersecurity</li>-->
+                    <li>Hiking and outdoor activities to stay active</li>
+                </ul>
+            </p>
+            <br>
+            <h3>Leadership and Event Management Experience</h3>
+            <p>
+                I have had the opportunity to develop my leadership and event management skills through various roles:
+                <ul>
+                    <li>Assisted in organizing College Hackathon – Clash of Code, Capture the Bug</li>
+                </ul>
+            </p>
+        </div>
+             
+
+        <div id="card" class="Contact">
+            <h2>Contact</h2>
+            <p>
+                <strong><span class="gif-placeholder" style="display: inline-block; width: 30px; height: 30px; background-image: url('icons8-phone-ringing.gif'); background-size: cover;"></span></strong> +91 74835 88366
+            </p>
+            <p>
+                <strong><span class="gif-placeholder" style="display: inline-block; width: 30px; height: 30px; background-image: url('icons8-email.gif'); background-size: cover;"></span></strong> kprajval04@gmail.com
+            </p>
+            <p>
+                <strong><span class="gif-placeholder" style="display: inline-block; width: 30px; height: 30px; background-image: url('icons8-location.gif'); background-size: cover;"></span></strong> Bangalore, Karnataka
+            </p>
+        </div>
+              
+        <div id="card" class="Skills">
+            <h2>Skill Set</h2>
+            <ul class="skills-list">
+                <li><strong>MERN Full Stack Developer (Frontend & Backend)</strong></li>
+                <li><strong>Programming Languages :</strong> C, Java, Python, Javascript</li>
+                <li><strong>Web Developing Framework :</strong> React JS, Struts 2</li>
+                <li><strong>Python App development</strong></li>
+                <li><strong>Database Services :</strong> MySQL, SQLlite, MongoDB</li>
+                <li><strong>Data Structure and Algorithm</strong></li>
+                <li><strong>Computer networking</strong></li>
+                <li><strong>Operating Systems</strong></li>
+            </ul>
+        </div>
+
+        <div id="card" class="Edu">
+            <h2>Education Details</h2>
+            <div class="education-item">
+                <h3>PES University, Bangalore</h3>
+                <p><strong>Duration:</strong> 2022 – Present</p>
+                <!--<p><strong>Current CGPA:</strong> 7.35 (up to 4th semester)</p>-->
+            </div>
+            <div class="education-item">
+                <h3>Sri Chaitanya Marathalli, Bangalore</h3>
+                <p><strong>Duration:</strong> 2020 – 2022</p>
+                <p><strong>CBSE 12th Board:</strong> 84%</p>
+            </div>
+            <div class="education-item">
+                <h3>Kendriya Vidyalaya NAL, Bangalore</h3>
+                <p><strong>Duration:</strong> 2010 – 2020</p>
+                <p><strong>CBSE 10th Board:</strong> 81%</p>
+            </div>
+        </div>
+        
+
+        <div id="card" class="WorkExp">
+            <h2>Work Experience</h2>
+            <div class="job">
+                <h3>Internship at URSC-ISRO, Bangalore</h3>
+                <p>Duration: 45 days (From: 27th May 2024 To: 10th July 2024)</p>
+                <ul>
+                    <li>Worked on Web Technologies using the Struts 2 Framework, Java, and MySQL.</li>
+                    <li>Developed a real-time project focused on managing an Employee Data Page.</li>
+                    <li>Collected and analyzed data on various employee-related measures.</li>
+                    <li>Gained hands-on experience in backend and frontend development within a structured project environment.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="card" class="Projects">
+            <h2>Projects Done</h2>
+            <p>Github: <a href="https://github.com/kprajval" target="_blank">github.com/kprajval</a></p>
+            <div class="project">
+                <h3>Desktop Assistant (using Python)</h3>
+                <p>Developed a desktop assistant application using Python to automate tasks, provide information, and enhance 
+                    productivity with customizable features.</p>
+            </div>
+            <div class="project">
+                <h3>CloudShare (using Python)</h3>
+                <p>CloudShare is a project designed to facilitate seamless file management and collaboration between multiple users. 
+                    Utilizing a server-client architecture, it allows users to upload, download, and view files stored on a central 
+                    server from their own computers. Whether sharing documents, images, or other data, CloudShare provides a secure 
+                    and efficient platform for collaborative file sharing and management.</p>
+            </div>
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>Explore my journey and professional accomplishments through this portfolio, designed with pure HTML, CSS, and JavaScript. 
+                    Here, you'll find detailed information about me, my skills, education, major projects, and work experience.
+                   
+                    <ul>
+                        <li>About Me: Get to know who I am, my passions, and my career aspirations.</li>
+                        <li>Skill Set: Discover the technical skills I possess, presented visually for clarity.</li>
+                        <li>Education Details: Review my academic background and qualifications.</li>
+                        <li>Major Projects: Dive into the significant projects I've worked on, showcasing my expertise.</li>
+                        <li>Work Experience: Learn about my professional journey and the experiences that have shaped my career.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
