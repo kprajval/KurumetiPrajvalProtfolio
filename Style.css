@@ -80,6 +80,7 @@ body {
     border-radius: 6%;
     cursor: pointer;
     margin-top: 10px; /* Adjust as needed */
+    font-size:60%;
 }
 
 #AbtMeBtn:hover, #Resume:hover {
