@@ -6,12 +6,25 @@ document.addEventListener('DOMContentLoaded', function() {
         'education-img': '.Edu',
         'projects-img': '.Projects',
         'work-exp-img': '.WorkExp',
-        'feedback-img': '.Feedback',
-        'AbtMeBtn': '.AbtMe'
+        'AbtMeBtn': '.AbtMe',
+        'AbtMeMob':'.AbtMe',
+        'ContactMob':'.Contact',
+        'SkillMob':'.Skills',
+        'EduMob':'.Edu',
+        'ProjMob':'.Projects',
+        'WorkExpMob':'.WorkExp'
     };
 
     document.addEventListener('click', function(event) {
         const targetId = event.target.id;
+
+        var menuItems = document.getElementById('menu-items-mob');
+        menuItems.style.display = 'none';
+
+        if(targetId == "Close"){
+            hideAllSections();
+            removeActiveClass();
+        }
 
         if (sections[targetId]) {
             activateSection(targetId, sections[targetId]);
@@ -97,3 +110,19 @@ document.getElementById("work-exp-img").addEventListener('mouseout', () => {
     document.getElementById("WorkHoverMsg").style.display = "none";
 });
 
+document.getElementById('menu-mob').addEventListener('click', function(event) {
+    var menuItems = document.getElementById('menu-items-mob');
+    if (menuItems.style.display === 'none' || menuItems.style.display === '') {
+        menuItems.style.display = 'flex';
+    } else {
+        menuItems.style.display = 'none';
+    }
+    event.stopPropagation();
+});
+
+document.body.addEventListener('click', function(event) {
+    var menuItems = document.getElementById('menu-items-mob');
+    if (!menuItems.contains(event.target)) {
+        menuItems.style.display = 'none';
+    }
+});
