@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Resume
 function openPDF() {
-    var pdfUrl = "https://kprajval.github.io/portfolio/KurumetiPrajval_Resume.pdf";
+    var pdfUrl = "https://github.com/kprajval/kprajval.github.io/blob/main/KurumetiPrajval_Resume.pdf";
     window.open(pdfUrl, '_blank');
 }
 
