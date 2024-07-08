@@ -372,7 +372,7 @@ body {
     color: #333;
     background-color: white;
     font-size: small;
-    padding: 0.5%;
+    padding: 0.9%;
     border-radius: 1%;
     display: none;
     font-weight: 700;
@@ -380,27 +380,27 @@ body {
 }
 
 #AbtHoverMsg{
-    top: 30.5%;
+    top: 28%;
 }
 
 #ContactHoverMsg{
-    top: 36.7%;
+    top: 35%;
 }
 
 #SkillHoverMsg{
-    top: 43%;
+    top: 41.9%;
 }
 
 #EduHoverMsg{
-    top: 49.3%;
+    top: 48.65%;
 }
 
 #ProjHoverMsg{
-    top: 55.5%;
+    top: 55.3%;
 }
 
 #WorkHoverMsg{
-    top: 61.5%;
+    top: 62.3%;
 }
 
 #menu-mob {
